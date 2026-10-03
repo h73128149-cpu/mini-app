@@ -222,11 +222,10 @@
                 tg.HapticFeedback.impactOccurred('medium');
             }
 
-            // آدرس ارسال مستقیم دستور به ربات
             const botUsername = "Hesamm_vpnbot";
-            const targetUrl = `https://t.me/${botUsername}?start=${planCode}`;
+            // ارجاع به دستور shop در پایتون
+            const targetUrl = `https://t.me/${botUsername}?start=shop_${planCode}`;
 
-            // هدایت کاربر و بستن مینی اپ
             tg.openTelegramLink(targetUrl);
             tg.close();
         }
